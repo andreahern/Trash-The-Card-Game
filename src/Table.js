@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import BoardController from './BoardController.js';
+import BoardController from './BoardController.js'
+import Card from './Card.js'
 import EndRound from './EndRound.js'
 import EndGame from './EndGame.js'
 class Table extends Component {
@@ -179,8 +180,8 @@ class Table extends Component {
         return (
             <div>
                 <div className='Table'>
-        <div className='Card' style={{marginRight: '150px'}}>Deck {this.state.deck.length}</div>
-                    <div className='Card'>{this.state.trash.length > 0 ? [this.state.trash.slice(-1)] : <p>Trash</p>}</div>                    
+                    <Card value={<img src={require(`./assets/top.png`)}/>} type='Deck' />
+                    <Card value={(this.state.trash.length > 0 ? <img src={require(`./assets/${[this.state.trash.slice(-1)]}.png`)} alt=''/> : <p>Trash</p>)} type='Card'/>
                 </div>
 
                 <div className="Options">

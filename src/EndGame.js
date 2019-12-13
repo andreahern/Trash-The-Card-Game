@@ -5,7 +5,7 @@ class EndGame extends Component {
         return (
             <div>
                 <h1>Player {this.props.playerWon} has Won The Game!</h1>
-                <a href="#" onClick={() => this.props.fullReset()}>Play New Game</a>
+                <a href='#' onClick={() => this.props.fullReset()}>Play New Game</a>
             </div>
         )
     }

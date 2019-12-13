@@ -6,6 +6,16 @@
 
 }
 
+.Deck {
+  display:flex;
+  align-items: center;
+  justify-content: center;  
+  height: 150px;
+  width: 125px;
+  border: 2px solid blue;
+  margin-right: 150px;
+}
+
 .Card {
   display:flex;
   align-items: center;
